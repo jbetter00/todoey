@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF817FAF20FD1E050064D287 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF817FAD20FD1E050064D287 /* DataModel.xcdatamodeld */; };
 		AF817FDA20FEBFCA0064D287 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF817FD920FEBFCA0064D287 /* CategoryViewController.swift */; };
+		AF817FDE21000ACD0064D287 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF817FDD21000ACD0064D287 /* Item.swift */; };
+		AF817FE021000AE00064D287 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF817FDF21000AE00064D287 /* Category.swift */; };
 		AFF2863420F0E7D0006C3206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2863320F0E7D0006C3206 /* AppDelegate.swift */; };
 		AFF2863620F0E7D0006C3206 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF2863520F0E7D0006C3206 /* TodoListViewController.swift */; };
 		AFF2863920F0E7D0006C3206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFF2863720F0E7D0006C3206 /* Main.storyboard */; };
@@ -20,8 +21,9 @@
 /* Begin PBXFileReference section */
 		19BD794C1B691DCABE03347E /* Pods-todoey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-todoey.debug.xcconfig"; path = "Pods/Target Support Files/Pods-todoey/Pods-todoey.debug.xcconfig"; sourceTree = "<group>"; };
 		2BC8557E96059BA2D00BEC63 /* Pods_todoey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_todoey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF817FAE20FD1E050064D287 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		AF817FD920FEBFCA0064D287 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		AF817FDD21000ACD0064D287 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AF817FDF21000AE00064D287 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		AFF2863020F0E7CF006C3206 /* todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFF2863320F0E7D0006C3206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFF2863520F0E7D0006C3206 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +66,8 @@
 		AF817FA920F6C7DC0064D287 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				AF817FAD20FD1E050064D287 /* DataModel.xcdatamodeld */,
+				AF817FDF21000AE00064D287 /* Category.swift */,
+				AF817FDD21000ACD0064D287 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -240,10 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF817FDE21000ACD0064D287 /* Item.swift in Sources */,
 				AF817FDA20FEBFCA0064D287 /* CategoryViewController.swift in Sources */,
 				AFF2863620F0E7D0006C3206 /* TodoListViewController.swift in Sources */,
-				AF817FAF20FD1E050064D287 /* DataModel.xcdatamodeld in Sources */,
 				AFF2863420F0E7D0006C3206 /* AppDelegate.swift in Sources */,
+				AF817FE021000AE00064D287 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,19 +447,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AF817FAD20FD1E050064D287 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AF817FAE20FD1E050064D287 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = AF817FAE20FD1E050064D287 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AFF2862820F0E7CF006C3206 /* Project object */;
 }
